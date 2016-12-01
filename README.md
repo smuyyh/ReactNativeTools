@@ -6,6 +6,7 @@ ReactNativeTools, to make it easier to execute react-native commands
 ## Guide
 
 1. **install**
+
   File -> Settings -> Plugin -> Install plugin from disk -> select ReactNativeTools.jar -> OK -> Restart Intellij/Webstorm
   
 2. Tools -> react-native -> ReactRunAndroid, This is equivalent to executing the following command
