@@ -19,10 +19,10 @@ public class SendCommandPlugin extends AnAction {
 
         String cmd = showDialog(project);
 
-        Utils.sendCommand(path, cmd);
+        Utils.sendCommand(path, "cmd /c start " + cmd);
     }
 
-    private String showDialog(Project project){
+    private String showDialog(Project project) {
         return Messages.showInputDialog(project, "input cmd", "Send command", null);
     }
 }
