@@ -1,5 +1,9 @@
 package com.yuyh.reactnative.utils;
 
+import com.intellij.openapi.actionSystem.AnActionEvent;
+import com.intellij.openapi.actionSystem.PlatformDataKeys;
+import com.intellij.openapi.project.Project;
+
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.File;
@@ -10,7 +14,11 @@ import java.io.InputStreamReader;
  */
 public class Utils {
 
-    public static void sendCommand(String path, String cmd) {
+    public static Project getProjectByEvent(AnActionEvent event) {
+        return event.getData(PlatformDataKeys.PROJECT);
+    }
+
+    public synchronized static void sendCommand(String path, String cmd) {
 
         new Thread(() -> {
             Runtime run = Runtime.getRuntime();

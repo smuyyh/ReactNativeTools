@@ -56,7 +56,11 @@
 
             <separator/>
 
+            <action id="SendCommandPlugin" class="com.yuyh.reactnative.SendCommandPlugin" text="SendCommand"
+                    description="send command in terminal"/>
+
         </group>
+
     </actions>
 
 </idea-plugin>
