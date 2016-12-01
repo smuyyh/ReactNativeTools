@@ -23,6 +23,6 @@ public class SendCommandPlugin extends AnAction {
     }
 
     private String showDialog(Project project) {
-        return Messages.showInputDialog(project, "input cmd", "Send command", null);
+        return Messages.showInputDialog(project, "input command", "Send command", null);
     }
 }

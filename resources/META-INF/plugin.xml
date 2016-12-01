@@ -1,7 +1,7 @@
 <idea-plugin version="2">
     <id>com.yuyh.reactnative.tools</id>
     <name>ReactNativeTools</name>
-    <version>1.0</version>
+    <version>1.1</version>
     <vendor email="smuyyh@gmail.com" url="https://github.com/smuyyh/ReactNativeTools">Pax, co.ltd.</vendor>
 
     <description><![CDATA[
@@ -9,7 +9,7 @@
     ]]></description>
 
     <change-notes><![CDATA[
-        v1.0
+        add debugger-ui plugin.
     ]]>
     </change-notes>
 
@@ -32,33 +32,35 @@
 
             <add-to-group group-id="ToolsMenu" anchor="first"/>
 
-            <action id="RunAndroidPlugin" class="com.yuyh.reactnative.RunAndroidPlugin" text="ReactRunAndroid"
+            <action id="RunAndroidPlugin" class="com.yuyh.reactnative.RunAndroidPlugin" text="run-android"
                     description="react-native run-android" icon="/icons/react.png">
                 <add-to-group group-id="MainToolBar" anchor="last"/>
 
                 <keyboard-shortcut first-keystroke="ctrl alt R" keymap="$default"/>
             </action>
 
-            <action id="DevMenuPlugin" class="com.yuyh.reactnative.DevMenuPlugin" text="ReactDevMenu"
+            <action id="DevMenuPlugin" class="com.yuyh.reactnative.DevMenuPlugin" text="open dev menu"
                     description="adb shell input keyevent 82" icon="/icons/dev.png">
                 <add-to-group group-id="MainToolBar" anchor="last"/>
 
                 <keyboard-shortcut first-keystroke="ctrl alt D" keymap="$default"/>
             </action>
 
-            <action id="StartPlugin" class="com.yuyh.reactnative.StartPlugin" text="Start"
+            <action id="StartPlugin" class="com.yuyh.reactnative.StartPlugin" text="start server"
                     description="react-native start" icon="/icons/start.png">
 
                 <keyboard-shortcut first-keystroke="ctrl alt O" keymap="$default"/>
             </action>
 
+            <action id="DebugUiPlugin" class="com.yuyh.reactnative.DebugUiPlugin" text="open debugger-ui"
+                    description="Open debugger-ui in Chrome"  icon="/icons/chrome.png"/>
+
             <separator/>
 
-            <action id="SendCommandPlugin" class="com.yuyh.reactnative.SendCommandPlugin" text="SendCommand"
+            <action id="SendCommandPlugin" class="com.yuyh.reactnative.SendCommandPlugin" text="send command"
                     description="send command in terminal"/>
 
         </group>
-
     </actions>
 
 </idea-plugin>
