@@ -1,17 +1,15 @@
 <idea-plugin version="2">
-    <id>com.your.company.unique.plugin.id</id>
+    <id>com.yuyh.reactnative.tools</id>
     <name>ReactNativeTools</name>
     <version>1.0</version>
-    <vendor email="smuyyh@gmail.com" url="https://github.com/smuyyh">PAX</vendor>
+    <vendor email="smuyyh@gmail.com" url="https://github.com/smuyyh/ReactNativeTools">Pax, co.ltd.</vendor>
 
     <description><![CDATA[
-      Enter short description for your plugin here.<br>
-      <em>most HTML tags may be used</em>
+      ReactNativeTools, to make it easier to execute react-native commands
     ]]></description>
 
     <change-notes><![CDATA[
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>
+        v1.0
     ]]>
     </change-notes>
 
