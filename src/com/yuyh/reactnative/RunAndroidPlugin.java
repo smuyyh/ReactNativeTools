@@ -5,6 +5,7 @@ import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.PlatformDataKeys;
 import com.intellij.openapi.progress.util.StatusBarProgress;
 import com.intellij.openapi.project.Project;
+import com.yuyh.reactnative.utils.Utils;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
@@ -27,24 +28,8 @@ public class RunAndroidPlugin extends AnAction {
         Project project = event.getData(PlatformDataKeys.PROJECT);
         String path = project.getBasePath();
 
-        String cmd = "cmd /c react-native run-android";
+        String cmd = "cmd /c start react-native run-android";
 
-        Runtime run = Runtime.getRuntime();
-
-        try {
-            Process p = run.exec(cmd, null, new File(path));
-            BufferedInputStream in = new BufferedInputStream(p.getErrorStream());
-            BufferedReader inBr = new BufferedReader(new InputStreamReader(in));
-            String lineStr;
-            while ((lineStr = inBr.readLine()) != null) {
-                System.out.println(lineStr);
-            }
-
-            p.waitFor();
-            inBr.close();
-            in.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        Utils.sendCommand(path, cmd);
     }
 }

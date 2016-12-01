@@ -48,6 +48,14 @@
                 <keyboard-shortcut first-keystroke="ctrl alt D" keymap="$default"/>
             </action>
 
+            <action id="StartPlugin" class="com.yuyh.reactnative.StartPlugin" text="Start"
+                    description="react-native start" icon="/icons/start.png">
+
+                <keyboard-shortcut first-keystroke="ctrl alt O" keymap="$default"/>
+            </action>
+
+            <separator/>
+
         </group>
     </actions>
 
