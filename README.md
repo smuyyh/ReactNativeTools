@@ -1,7 +1,7 @@
 # ReactNativeTools
 ReactNativeTools, to make it easier to execute react-native commands
 
-<img src="https://github.com/smuyyh/ReactNativeTools/raw/master/screenshot/toolsmenu.png" height=200 />
+<img src="https://github.com/smuyyh/ReactNativeTools/raw/master/screenshot/toolsmenu_1.png" height=200 />
 
 ## Guide
 
@@ -9,24 +9,28 @@ ReactNativeTools, to make it easier to execute react-native commands
 
   File -> Settings -> Plugin -> Install plugin from disk -> select ReactNativeTools.jar -> OK -> Restart Intellij/Webstorm
   
-2. Tools -> react-native -> ReactRunAndroid, This is equivalent to executing the following command
+2. Tools -> react-native -> run-android, this is equivalent to executing the following command
   ```
 react-native run-android
   ```
-3. Tools -> react-native -> ReactDevMenu, This is equivalent to executing the following command
+3. Tools -> react-native -> open dev menu, this is equivalent to executing the following command
 
   ```
 adb shell input keyevent 82
   ```
-4. Tools -> react-native -> Start, This is equivalent to executing the following command
+4. Tools -> react-native -> start server, this is equivalent to executing the following command
 
   ```
 react-native start
   ```
 
-5. Tools -> react-native -> Start, exec custom command
+5. Tools -> react-native -> open debugger-ui, this will open the debugger-ui in Chrome
+
+  <img src="https://github.com/smuyyh/ReactNativeTools/raw/master/screenshot/opendebuggerui.png" height=170 />
+
+6. Tools -> react-native -> Start, exec custom command
   
-  <img src="https://github.com/smuyyh/ReactNativeTools/raw/master/screenshot/sendcommand.png" height=200 />
+  <img src="https://github.com/smuyyh/ReactNativeTools/raw/master/screenshot/sendcommand.png" height=170 />
   
 ## License
 ```
