@@ -18,6 +18,11 @@ import java.util.ArrayList;
 public class RunAndroidPlugin extends AnAction {
 
     @Override
+    public void update(AnActionEvent event) {
+        event.getPresentation().setEnabledAndVisible(true);
+    }
+
+    @Override
     public void actionPerformed(AnActionEvent event) {
         Project project = event.getData(PlatformDataKeys.PROJECT);
         String path = project.getBasePath();
