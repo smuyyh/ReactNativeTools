@@ -22,7 +22,7 @@ public class RunAndroidPlugin extends AnAction {
         Project project = event.getData(PlatformDataKeys.PROJECT);
         String path = project.getBasePath();
 
-        String cmd = "cmd /c start react-native run-android";
+        String cmd = "cmd /c react-native run-android";
 
         Runtime run = Runtime.getRuntime();
 
