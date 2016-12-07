@@ -1,7 +1,8 @@
 # ReactNativeTools
-ReactNativeTools, to make it easier to execute react-native commands
 
-<img src="https://github.com/smuyyh/ReactNativeTools/raw/master/screenshot/toolsmenu_1.png" height=200 />
+IntelliJ plugin, to make it easier to execute react-native commands
+
+<img src="https://github.com/smuyyh/ReactNativeTools/raw/master/screenshot/toolsmenu_1.png" height=250 />
 
 ## Guide
 
@@ -33,11 +34,11 @@ react-native start
 
 5. Tools -> react-native -> open debugger-ui, this will open the debugger-ui in Chrome
 
-  <img src="https://github.com/smuyyh/ReactNativeTools/raw/master/screenshot/opendebuggerui.png" height=170 />
+  <img src="https://github.com/smuyyh/ReactNativeTools/raw/master/screenshot/opendebuggerui.png" height=160 />
 
 6. Tools -> react-native -> Start, exec custom command
   
-  <img src="https://github.com/smuyyh/ReactNativeTools/raw/master/screenshot/sendcommand.png" height=170 />
+  <img src="https://github.com/smuyyh/ReactNativeTools/raw/master/screenshot/sendcommand.png" height=160 />
   
 ## License
 ```
