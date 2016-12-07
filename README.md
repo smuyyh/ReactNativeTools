@@ -14,7 +14,8 @@ IntelliJ plugin, to make it easier to execute react-native commands
     2. install form repositories
 
         File -> Settings -> Plugin -> Browser repositories -> Search -> ReactNativeTools -> Install -> Restart Intellij/Webstorm
-        <img src="https://github.com/smuyyh/ReactNativeTools/raw/master/screenshot/repo.png" width=200 />
+
+        <img src="https://github.com/smuyyh/ReactNativeTools/raw/master/screenshot/repo.png" width=600 />
 
   
 2. Tools -> react-native -> run-android, this is equivalent to executing the following command
