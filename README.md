@@ -6,8 +6,15 @@ ReactNativeTools, to make it easier to execute react-native commands
 ## Guide
 
 1. **install**
+    1. install form disk
 
-  File -> Settings -> Plugin -> Install plugin from disk -> select ReactNativeTools.jar -> OK -> Restart Intellij/Webstorm
+        File -> Settings -> Plugin -> Install plugin from disk -> select ReactNativeTools.jar -> OK -> Restart Intellij/Webstorm
+
+    2. install form repositories
+
+        File -> Settings -> Plugin -> Browser repositories -> Search -> ReactNativeTools -> Install -> Restart Intellij/Webstorm
+        <img src="https://github.com/smuyyh/ReactNativeTools/raw/master/screenshot/repo.png" width=200 />
+
   
 2. Tools -> react-native -> run-android, this is equivalent to executing the following command
   ```
